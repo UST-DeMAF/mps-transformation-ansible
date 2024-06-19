@@ -49,7 +49,7 @@
     <property role="TrG5h" value="AnsibleDeploymentModel" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Ansible Deployment Model" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2X8lK2gobMm" role="1TKVEi">
       <property role="IQ2ns" value="3407068778039655574" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -61,6 +61,7 @@
   <node concept="1TIwiD" id="2X8lK2gock6">
     <property role="EcuMT" value="3407068778039657734" />
     <property role="TrG5h" value="Play" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2X8lK2godQW" role="PzmwI">
       <ref role="PrY4T" node="2X8lK2gocYn" resolve="AnsibleComponent" />
@@ -292,7 +293,7 @@
   <node concept="1TIwiD" id="4hz45fR7P7z">
     <property role="EcuMT" value="4927800370087809507" />
     <property role="TrG5h" value="Task" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4hz45fR7POh" role="PzmwI">
       <ref role="PrY4T" node="4hz45fR7Ma0" resolve="NonPlayComponent" />
     </node>
@@ -300,7 +301,8 @@
   <node concept="1TIwiD" id="4hz45fR7PPx">
     <property role="EcuMT" value="4927800370087812449" />
     <property role="TrG5h" value="Role" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4hz45fR7PVD" role="PzmwI">
       <ref role="PrY4T" node="4hz45fR7Ma0" resolve="NonPlayComponent" />
     </node>
@@ -343,12 +345,24 @@
   <node concept="1TIwiD" id="4hz45fR7Q7S">
     <property role="EcuMT" value="4927800370087813624" />
     <property role="TrG5h" value="Host" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3h0GiIBZ0PD" role="1TKVEl">
+      <property role="IQ2nx" value="3765204089541758313" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3h0GiIBZ1bi" role="1TKVEi">
+      <property role="IQ2ns" value="3765204089541759698" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="vars" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4hz45fR7Qeq" resolve="Variable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hz45fR7QaJ">
     <property role="EcuMT" value="4927800370087813807" />
     <property role="TrG5h" value="File" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4hz45fR7Q_C" role="1TKVEl">
       <property role="IQ2nx" value="4927800370087815528" />
       <property role="TrG5h" value="path" />
@@ -358,7 +372,7 @@
   <node concept="1TIwiD" id="4hz45fR7Qeq">
     <property role="EcuMT" value="4927800370087814042" />
     <property role="TrG5h" value="Variable" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4hz45fR7QIA" role="1TKVEl">
       <property role="IQ2nx" value="4927800370087816102" />
       <property role="TrG5h" value="name" />

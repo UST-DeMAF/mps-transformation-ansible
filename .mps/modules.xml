@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/EDMM/EDMM.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Ansible/Ansible.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps-transformation-ansible.build/mps-transformation-ansible.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/AnsibleSandbox/AnsibleSandbox.msd" folder="" />
+    </projectModules>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/mps-transformation.iml" filepath="$PROJECT_DIR$/.idea/mps-transformation.iml" />
+    </modules>
+  </component>
+</project>

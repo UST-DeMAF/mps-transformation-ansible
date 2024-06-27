@@ -266,6 +266,17 @@
         <node concept="1yeLz9" id="3QqIby4Ckth" role="1TViLv">
           <property role="TrG5h" value="Ansible.generator" />
           <property role="3LESm3" value="897a1570-2a24-491c-9dc4-7203db3b7f7e" />
+          <node concept="55IIr" id="3QqIby4Ckti" role="3LF7KH" />
+          <node concept="1SiIV0" id="3QqIby4Ckvk" role="3bR37C">
+            <node concept="3bR9La" id="3QqIby4Ckvs" role="1SiIV1">
+              <ref role="3bR37D" node="3QqIby4Ckmy" resolve="EDMM" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="6Cdh7ACTkQM" role="3bR37C">
+            <node concept="3bR9La" id="6Cdh7ACTkQN" role="1SiIV1">
+              <ref role="3bR37D" node="3QqIby4Ckma" resolve="Ansible" />
+            </node>
+          </node>
           <node concept="1BupzO" id="3QqIby4Ckw0" role="3bR31x">
             <node concept="3LXTmp" id="3QqIby4Ckw2" role="1HemKq">
               <node concept="398BVA" id="3QqIby4Ckwh" role="3LXTmr">
@@ -288,15 +299,29 @@
               </node>
             </node>
           </node>
-          <node concept="55IIr" id="3QqIby4Ckti" role="3LF7KH" />
-          <node concept="1SiIV0" id="3QqIby4Ckvk" role="3bR37C">
-            <node concept="3bR9La" id="3QqIby4Ckvs" role="1SiIV1">
-              <ref role="3bR37D" node="3QqIby4Ckmy" resolve="EDMM" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="6Cdh7ACTkQM" role="3bR37C">
-            <node concept="3bR9La" id="6Cdh7ACTkQN" role="1SiIV1">
-              <ref role="3bR37D" node="3QqIby4Ckma" resolve="Ansible" />
+          <node concept="1BupzO" id="6Cdh7ACUmgY" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="6Cdh7ACUmgZ" role="1HemKq">
+              <node concept="398BVA" id="6Cdh7ACUmgJ" role="3LXTmr">
+                <ref role="398BVh" node="3QqIby4Ckks" resolve="project_home" />
+                <node concept="2Ry0Ak" id="6Cdh7ACUmgK" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="6Cdh7ACUmgL" role="2Ry0An">
+                    <property role="2Ry0Am" value="Ansible" />
+                    <node concept="2Ry0Ak" id="6Cdh7ACUmgM" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="6Cdh7ACUmgN" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="6Cdh7ACUmh0" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
             </node>
           </node>
         </node>
@@ -320,6 +345,11 @@
             <node concept="3qWCbU" id="6Cdh7ACTkQL" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6Cdh7ACUmgx" role="3bR37C">
+          <node concept="3bR9La" id="6Cdh7ACUmgy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>

@@ -39,10 +39,14 @@
       <concept id="3407068778039652530" name="Ansible.structure.AnsibleDeploymentModel" flags="ng" index="2ZaeuM">
         <child id="3407068778039655574" name="plays" index="2ZaeIm" />
       </concept>
-      <concept id="7641839432033061434" name="Ansible.structure.Module" flags="ng" index="32UwT3">
-        <property id="7641839432033130344" name="name" index="32Thch" />
-        <child id="7641839432033130892" name="vars" index="32ThRP" />
+      <concept id="5711010130247150390" name="Ansible.structure.apt" flags="ng" index="35i7T2">
+        <property id="5711010130247156071" name="pkgs" index="35iTgj" />
       </concept>
+      <concept id="5711010130247162773" name="Ansible.structure.Module" flags="ng" index="35iSVx">
+        <property id="5711010130247163216" name="name" index="35iSw$" />
+        <child id="5711010130247163686" name="vars" index="35iSDi" />
+      </concept>
+      <concept id="5711010130247343104" name="Ansible.structure.vmware_guest" flags="ng" index="35jk_O" />
     </language>
   </registry>
   <node concept="2ZaeuM" id="6Cdh7ACTObg">
@@ -50,19 +54,30 @@
       <property role="2NvdFt" value="play1" />
       <property role="2Nvc0S" value="ubuntu" />
       <property role="2ZaaxS" value="test" />
+      <node concept="2Nv46K" id="4X1_nia3dTs" role="2Nv5fw">
+        <property role="2NvdFt" value="create_vms" />
+        <node concept="35jk_O" id="4X1_nia3j3v" role="32Uwbj">
+          <property role="35iSw$" value="vmware_guest" />
+          <node concept="2Nv7f9" id="4X1_nia3j3y" role="35iSDi">
+            <property role="2Nv7JP" value="hostname" />
+            <property role="2Nv7P7" value="{{ vcenter_url }}" />
+          </node>
+        </node>
+      </node>
       <node concept="2Nv4OM" id="6Cdh7ACU9$c" role="2Zalyf">
         <property role="2NvdFt" value="nat_router" />
         <property role="2Za8eI" value="true" />
         <property role="2Nv22n" value="true" />
         <node concept="2Nv46K" id="6Cdh7ACU9$n" role="2Nv6N6">
           <property role="2NvdFt" value="Install tools" />
-          <node concept="32UwT3" id="6Cdh7ACU9$o" role="32Uwbj">
-            <property role="32Thch" value="apt" />
-            <node concept="2Nv7f9" id="6Cdh7ACU9$r" role="32ThRP">
+          <node concept="35i7T2" id="4X1_nia2WhK" role="32Uwbj">
+            <property role="35iSw$" value="apt" />
+            <property role="35iTgj" value="&quot;netfilter-persistent, iptables-persistent&quot;" />
+            <node concept="2Nv7f9" id="4X1_nia31hL" role="35iSDi">
               <property role="2Nv7JP" value="update_cache" />
               <property role="2Nv7P7" value="yes" />
             </node>
-            <node concept="2Nv7f9" id="6Cdh7ACU9$t" role="32ThRP">
+            <node concept="2Nv7f9" id="4X1_nia31hN" role="35iSDi">
               <property role="2Nv7JP" value="state" />
               <property role="2Nv7P7" value="present" />
             </node>
@@ -79,16 +94,6 @@
         <node concept="2Nv7f9" id="6Cdh7ACU9$j" role="2Nv652">
           <property role="2Nv7JP" value="lan_ip_range" />
           <property role="2Nv7P7" value="10.0.0.0/16" />
-        </node>
-      </node>
-      <node concept="2Nv46K" id="6Cdh7ACTObS" role="2Nv5fw">
-        <property role="2NvdFt" value="create_vms" />
-        <node concept="32UwT3" id="6Cdh7ACU4O_" role="32Uwbj">
-          <property role="32Thch" value="community.vmware.vmware_guest" />
-          <node concept="2Nv7f9" id="6Cdh7ACU7Dg" role="32ThRP">
-            <property role="2Nv7JP" value="hostname" />
-            <property role="2Nv7P7" value="{{ vcenter_url }}" />
-          </node>
         </node>
       </node>
       <node concept="2Nv76F" id="6Cdh7ACTObj" role="2ZakIL">

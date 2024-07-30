@@ -465,7 +465,7 @@
         <node concept="1bpajm" id="6EqhN9zIldo" role="3cqZAp" />
         <node concept="lc7rE" id="6EqhN9zIldn" role="3cqZAp">
           <node concept="la8eA" id="6EqhN9zIldq" role="lcghm">
-            <property role="lacIc" value="component types:" />
+            <property role="lacIc" value="component_types:" />
           </node>
         </node>
         <node concept="3cpWs8" id="7Bdv9R5g9HI" role="3cqZAp">
@@ -580,7 +580,7 @@
         <node concept="1bpajm" id="6EqhN9zIlgi" role="3cqZAp" />
         <node concept="lc7rE" id="6EqhN9zIlgh" role="3cqZAp">
           <node concept="la8eA" id="6EqhN9zIlgk" role="lcghm">
-            <property role="lacIc" value="relation types:" />
+            <property role="lacIc" value="relation_types:" />
           </node>
         </node>
         <node concept="3cpWs8" id="7Bdv9R5gbxG" role="3cqZAp">

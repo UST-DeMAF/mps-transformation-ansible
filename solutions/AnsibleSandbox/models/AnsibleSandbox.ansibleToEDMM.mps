@@ -70,12 +70,44 @@
       <property role="2Za8eI" value="true" />
       <node concept="2Nv4OM" id="38fIs_HZ$m5" role="2Zalyf">
         <property role="2NvdFt" value="kafka" />
+        <node concept="2Nv46K" id="38fIs_I2yII" role="2Nv6N6">
+          <property role="2NvdFt" value="Deploy Service" />
+          <node concept="1FWEQc" id="38fIs_I2yTb" role="32Uwbj">
+            <property role="35iSw$" value="D" />
+            <property role="1FVq6B" value="kafka" />
+            <property role="1FWEmr" value="ghcr.io/open-telemetry/demo:1.10.0-kafka" />
+            <node concept="2Nv7f9" id="38fIs_I2zks" role="1FWFJ1">
+              <property role="2Nv7JP" value="KAFKA_SERVICE_ADDR" />
+              <property role="2Nv7P7" value="&quot;kafka:9092&quot;" />
+            </node>
+            <node concept="2Nv7f9" id="38fIs_I2zsA" role="1FWFJ1">
+              <property role="2Nv7JP" value="OTEL_EXPORTER_OTLP_ENDPOINT" />
+              <property role="2Nv7P7" value=" &quot;http://otelcol:4318&quot;" />
+            </node>
+            <node concept="2Nv7f9" id="38fIs_I2zE3" role="1FWFJ1">
+              <property role="2Nv7JP" value="OTEL_RESOURCE_ATTRIBUTES" />
+              <property role="2Nv7P7" value="&quot;service.name=kafka,service.namespace=opentelemetry-demo,service.version=1.10.0&quot;" />
+            </node>
+            <node concept="2Nv7f9" id="38fIs_I2zP5" role="1FWFJ1">
+              <property role="2Nv7JP" value="OTEL_SERVICE_NAME" />
+              <property role="2Nv7P7" value="&quot;kafka&quot;" />
+            </node>
+            <node concept="2Nv7f9" id="38fIs_I2zSO" role="1FWFJ1">
+              <property role="2Nv7JP" value="KAFKA_HEAP_OPTS" />
+              <property role="2Nv7P7" value="&quot;-Xmx400m -Xms400m&quot;" />
+            </node>
+            <node concept="2Nv7f9" id="38fIs_I2zXo" role="1FWFJ1">
+              <property role="2Nv7JP" value="KAFKA_ADVERTISED_LISTENERS" />
+              <property role="2Nv7P7" value="&quot;PLAINTEXT://kafka:9092&quot;" />
+            </node>
+          </node>
+        </node>
         <node concept="2Nv46K" id="38fIs_HZ$ot" role="2Nv6N6">
-          <property role="2NvdFt" value="Pull" />
+          <property role="2NvdFt" value="Pull the latest Docker image" />
           <node concept="1FWEUG" id="38fIs_HZ$xY" role="32Uwbj">
-            <property role="35iSw$" value="kafka-image" />
-            <property role="1FWH_M" value="test" />
-            <property role="1FVPYq" value="test" />
+            <property role="35iSw$" value="Pull the latest Docker image" />
+            <property role="1FWH_M" value="pull" />
+            <property role="1FVPYq" value="ghcr.io/open-telemetry/demo:1.10.0-kafka" />
           </node>
         </node>
       </node>
@@ -87,54 +119,54 @@
           <node concept="1FWEUG" id="5suyU8WV9I_" role="32Uwbj">
             <property role="35iSw$" value="Pull the latest Docker image" />
             <property role="1FWH_M" value="pull" />
-            <property role="1FVPYq" value="&quot;{{ image_name }}:{{ demo_version }}-{{ service_name }}&quot;" />
+            <property role="1FVPYq" value="&quot;ghcr.io/open-telemetry/demo:1.10.0-accountingservice&quot;" />
           </node>
         </node>
         <node concept="2Nv46K" id="38fIs_HMZtK" role="2Nv6N6">
           <property role="2NvdFt" value="Deploy Service" />
           <node concept="1FWEQc" id="38fIs_HMZu1" role="32Uwbj">
-            <property role="1FVq6B" value="&quot;{{ service_name }}&quot;" />
-            <property role="1FWEmr" value="&quot;{{ image_name }}&quot;" />
+            <property role="1FVq6B" value="&quot;accountingservice&quot;" />
             <property role="1FWEjm" value="&quot;{{ restart_policy }}&quot;" />
             <property role="1FWFQj" value="&quot;{{ memory_limit }}&quot;" />
             <property role="1FWF9$" value="&quot;{{ state }}&quot;" />
             <property role="1FWF2X" value="&quot;{{ network_name }}&quot;" />
             <property role="1FWFoO" value="&quot;{{ log_driver }}&quot;" />
+            <property role="1FWEmr" value="&quot;ghcr.io/open-telemetry/demo:1.10.0-accountingservice&quot;" />
             <node concept="2Nv7f9" id="38fIs_HMZug" role="1FWGRN">
               <property role="2Nv7JP" value="size" />
-              <property role="2Nv7P7" value="&quot;{{ log_options_max_size }}&quot;" />
+              <property role="2Nv7P7" value="&quot;5m&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZuh" role="1FWGRN">
               <property role="2Nv7JP" value="max-file" />
-              <property role="2Nv7P7" value="&quot;{{ log_options_max_file }}&quot;" />
+              <property role="2Nv7P7" value="&quot;2&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZui" role="1FWGRN">
               <property role="2Nv7JP" value="tag" />
-              <property role="2Nv7P7" value="&quot;{{ service_name }}&quot;" />
+              <property role="2Nv7P7" value="&quot;accountingservice&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZue" role="1FWGJA">
               <property role="2Nv7JP" value="name" />
-              <property role="2Nv7P7" value="&quot;{{ network_name }}&quot;" />
+              <property role="2Nv7P7" value="&quot;opentelemetry-demo&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZu4" role="1FWFJ1">
               <property role="2Nv7JP" value="OTEL_EXPORTER_OTLP_ENDPOINT" />
-              <property role="2Nv7P7" value="&quot;http://{{ otel_collector_host }}:{{ otel_collector_port_http }}&quot;" />
+              <property role="2Nv7P7" value="&quot;http://otelcol:4318&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZu5" role="1FWFJ1">
               <property role="2Nv7JP" value="OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE" />
-              <property role="2Nv7P7" value="&quot;{{ otlp_metrics_temporality_preference }}&quot;" />
+              <property role="2Nv7P7" value="&quot;cumulative&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZu6" role="1FWFJ1">
               <property role="2Nv7JP" value=" OTEL_RESOURCE_ATTRIBUTES" />
-              <property role="2Nv7P7" value="&quot;service.name={{ service_name }},service.namespace=opentelemetry-demo,service.version={{ demo_version }}&quot;" />
+              <property role="2Nv7P7" value="&quot;service.name=accountingservice,service.namespace=opentelemetry-demo,service.version=1.10.0&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZu7" role="1FWFJ1">
               <property role="2Nv7JP" value="OTEL_SERVICE_NAME" />
-              <property role="2Nv7P7" value="&quot;{{ service_name }}&quot;" />
+              <property role="2Nv7P7" value="&quot;accountingservice&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_HMZu8" role="1FWFJ1">
               <property role="2Nv7JP" value="KAFKA_SERVICE_ADDR" />
-              <property role="2Nv7P7" value="&quot;{{ kafkaservice_addr }}&quot;" />
+              <property role="2Nv7P7" value="&quot;kafka:9092&quot;" />
             </node>
           </node>
         </node>

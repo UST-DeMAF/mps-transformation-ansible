@@ -5,6 +5,7 @@
     <use id="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c" name="EDMM" version="0" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
@@ -153,6 +154,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -248,6 +250,7 @@
   </node>
   <node concept="13MO4I" id="3h0GiIBMFt9">
     <property role="TrG5h" value="reduce_Play_Component" />
+    <property role="3GE5qa" value="language" />
     <ref role="3gUMe" to="rdrv:2X8lK2gock6" resolve="Play" />
     <node concept="VmU7M" id="3h0GiIBS27B" role="13RCb5">
       <node concept="VmU4R" id="38fIs_HTTyR" role="VmU7O">
@@ -588,6 +591,7 @@
   </node>
   <node concept="13MO4I" id="3h0GiIBUk7b">
     <property role="TrG5h" value="reduce_Role_ComponentType" />
+    <property role="3GE5qa" value="language" />
     <ref role="3gUMe" to="rdrv:4hz45fR7PPx" resolve="Role" />
     <node concept="VmU4M" id="3h0GiIBUkrx" role="13RCb5">
       <property role="TrG5h" value="DummyComponentType" />
@@ -691,6 +695,7 @@
   </node>
   <node concept="13MO4I" id="6Cdh7ACWKbU">
     <property role="TrG5h" value="reduce_Host_ComponentType" />
+    <property role="3GE5qa" value="language" />
     <ref role="3gUMe" to="rdrv:4hz45fR7Q7S" resolve="Host" />
     <node concept="VmU4M" id="6Cdh7ACWKbV" role="13RCb5">
       <property role="TrG5h" value="DummyComponentType" />
@@ -722,6 +727,7 @@
   </node>
   <node concept="13MO4I" id="6Cdh7ACZlpF">
     <property role="TrG5h" value="reduce_Role_Component" />
+    <property role="3GE5qa" value="language" />
     <ref role="3gUMe" to="rdrv:4hz45fR7PPx" resolve="Role" />
     <node concept="VmU5f" id="6Cdh7ACZm99" role="13RCb5">
       <property role="TrG5h" value="DummyComponent" />
@@ -936,6 +942,7 @@
   </node>
   <node concept="13MO4I" id="4X1_nia4ver">
     <property role="TrG5h" value="reduce_Task_Operation" />
+    <property role="3GE5qa" value="language" />
     <ref role="3gUMe" to="rdrv:4hz45fR7P7z" resolve="Task" />
     <node concept="VmU4I" id="4X1_nia4vtT" role="13RCb5">
       <property role="TrG5h" value="action_name" />

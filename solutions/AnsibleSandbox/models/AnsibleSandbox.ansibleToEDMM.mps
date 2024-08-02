@@ -68,6 +68,17 @@
     <node concept="2Za986" id="5suyU8WUtc9" role="2ZaeIm">
       <property role="2NvdFt" value="Deploy OpenTelemetry Demo" />
       <property role="2Za8eI" value="true" />
+      <node concept="2Nv4OM" id="38fIs_HZ$m5" role="2Zalyf">
+        <property role="2NvdFt" value="kafka" />
+        <node concept="2Nv46K" id="38fIs_HZ$ot" role="2Nv6N6">
+          <property role="2NvdFt" value="Pull" />
+          <node concept="1FWEUG" id="38fIs_HZ$xY" role="32Uwbj">
+            <property role="35iSw$" value="kafka-image" />
+            <property role="1FWH_M" value="test" />
+            <property role="1FVPYq" value="test" />
+          </node>
+        </node>
+      </node>
       <node concept="2Nv4OM" id="5suyU8WUXeo" role="2Zalyf">
         <property role="2NvdFt" value="accountingservice" />
         <property role="2Za8eI" value="true" />
@@ -129,9 +140,6 @@
         </node>
         <node concept="1FXlaU" id="5suyU8WV2k5" role="1FXlWU">
           <property role="1FXlvm" value="kafka" />
-        </node>
-        <node concept="1FXlaU" id="5suyU8WV2k7" role="1FXlWU">
-          <property role="1FXlvm" value="otelcol" />
         </node>
         <node concept="2Nv7f9" id="5suyU8WUXeq" role="2Nv7oj">
           <property role="2Nv7JP" value="service_name" />

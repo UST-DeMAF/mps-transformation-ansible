@@ -351,10 +351,10 @@
                                 </node>
                                 <node concept="liA8E" id="38fIs_I2dFy" role="2OqNvi">
                                   <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence)" resolve="contentEquals" />
-                                  <node concept="2OqwBi" id="38fIs_I2eHu" role="37wK5m">
-                                    <node concept="1iwH7S" id="38fIs_I2egx" role="2Oq$k0" />
-                                    <node concept="1psM6Z" id="38fIs_I2eYe" role="2OqNvi">
-                                      <ref role="1psM6Y" node="38fIs_I1lZQ" resolve="sourceRoleName" />
+                                  <node concept="2OqwBi" id="38fIs_I2tNC" role="37wK5m">
+                                    <node concept="30H73N" id="38fIs_I2tsB" role="2Oq$k0" />
+                                    <node concept="3TrcHB" id="38fIs_I2vne" role="2OqNvi">
+                                      <ref role="3TsBF5" to="rdrv:5suyU8WUXLO" resolve="role" />
                                     </node>
                                   </node>
                                 </node>
@@ -468,23 +468,6 @@
                     </node>
                     <node concept="3TrcHB" id="38fIs_I0Qcv" role="2OqNvi">
                       <ref role="3TsBF5" to="rdrv:4hz45fR7WEe" resolve="name" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1ps_y7" id="38fIs_I1lZP" role="lGtFl">
-          <node concept="1ps_xZ" id="38fIs_I1lZQ" role="1ps_xO">
-            <property role="TrG5h" value="sourceRoleName" />
-            <node concept="2jfdEK" id="38fIs_I1lZR" role="1ps_xN">
-              <node concept="3clFbS" id="38fIs_I1lZS" role="2VODD2">
-                <node concept="3clFbF" id="38fIs_I1mPM" role="3cqZAp">
-                  <node concept="2OqwBi" id="38fIs_I1n1v" role="3clFbG">
-                    <node concept="30H73N" id="38fIs_I1mPL" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="38fIs_I1p96" role="2OqNvi">
-                      <ref role="3TsBF5" to="rdrv:5suyU8WUXLO" resolve="role" />
                     </node>
                   </node>
                 </node>

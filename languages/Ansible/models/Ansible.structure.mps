@@ -57,7 +57,7 @@
       <property role="IQ2ns" value="3407068778039655574" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="plays" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2X8lK2gock6" resolve="Play" />
     </node>
   </node>
@@ -322,9 +322,9 @@
     <node concept="1TJgyj" id="5suyU8WUXio" role="1TKVEi">
       <property role="IQ2ns" value="6277608459524101272" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="meta" />
+      <property role="20kJfa" value="dependencies" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5suyU8WUX$o" resolve="Dependency" />
+      <ref role="20lvS9" node="3vHFdRXILS0" resolve="String" />
     </node>
     <node concept="1TJgyj" id="4hz45fR7RCV" role="1TKVEi">
       <property role="IQ2ns" value="4927800370087819835" />
@@ -355,7 +355,12 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3h0GiIBZ0PD" role="1TKVEl">
       <property role="IQ2nx" value="3765204089541758313" />
-      <property role="TrG5h" value="name" />
+      <property role="TrG5h" value="hostName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRWXD_A" role="1TKVEl">
+      <property role="IQ2nx" value="4030067310998231398" />
+      <property role="TrG5h" value="group" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="3h0GiIBZ1bi" role="1TKVEi">
@@ -451,6 +456,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="4hz45fR7Qeq" resolve="Variable" />
     </node>
+    <node concept="1TJgyj" id="3vHFdRXIL$N" role="1TKVEi">
+      <property role="IQ2ns" value="4030067311011109171" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="loop" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3vHFdRXILS0" resolve="String" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4hz45fR7QaJ">
     <property role="EcuMT" value="4927800370087813807" />
@@ -501,6 +513,11 @@
     <property role="TrG5h" value="apt" />
     <property role="3GE5qa" value="actions" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3vHFdRXDDKP" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311009766453" />
+      <property role="TrG5h" value="apt_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="4X1_nia2w5B" role="1TKVEl">
       <property role="IQ2nx" value="5711010130247156071" />
       <property role="TrG5h" value="pkgs" />
@@ -513,17 +530,6 @@
     </node>
     <node concept="PrWs8" id="4X1_nia2ynS" role="PzmwI">
       <ref role="PrY4T" node="4X1_nia2xIl" resolve="Module" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5suyU8WUX$o">
-    <property role="EcuMT" value="6277608459524102424" />
-    <property role="TrG5h" value="Dependency" />
-    <property role="3GE5qa" value="language" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5suyU8WUXLO" role="1TKVEl">
-      <property role="IQ2nx" value="6277608459524103284" />
-      <property role="TrG5h" value="role" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="5suyU8WV2ke">
@@ -608,6 +614,60 @@
     </node>
     <node concept="PrWs8" id="5suyU8WV4SL" role="PzmwI">
       <ref role="PrY4T" node="4X1_nia2xIl" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3vHFdRXtZvu">
+    <property role="EcuMT" value="4030067311006709726" />
+    <property role="3GE5qa" value="actions" />
+    <property role="TrG5h" value="docker_network" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3vHFdRXtZxV" role="PzmwI">
+      <ref role="PrY4T" node="4X1_nia2xIl" resolve="Module" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRXBA6E" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311009227178" />
+      <property role="TrG5h" value="network_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRXBAfC" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311009227752" />
+      <property role="TrG5h" value="driver" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3vHFdRXtZLN">
+    <property role="EcuMT" value="4030067311006710899" />
+    <property role="3GE5qa" value="actions" />
+    <property role="TrG5h" value="launchd" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3vHFdRXy05d" role="PzmwI">
+      <ref role="PrY4T" node="4X1_nia2xIl" resolve="Module" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRXFuoM" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311010244146" />
+      <property role="TrG5h" value="launchd_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRXFusS" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311010244408" />
+      <property role="TrG5h" value="state" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3vHFdRXFuCk" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311010245140" />
+      <property role="TrG5h" value="enabled" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3vHFdRXILS0">
+    <property role="EcuMT" value="4030067311011110400" />
+    <property role="3GE5qa" value="helper" />
+    <property role="TrG5h" value="String" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3vHFdRXILXH" role="1TKVEl">
+      <property role="IQ2nx" value="4030067311011110765" />
+      <property role="TrG5h" value="string" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

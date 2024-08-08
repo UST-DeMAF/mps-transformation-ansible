@@ -13,10 +13,10 @@
       <concept id="4927800370087812449" name="Ansible.structure.Role" flags="ng" index="2Nv4OM">
         <child id="4927800370087820437" name="tasks" index="2Nv6N6" />
         <child id="4927800370087814720" name="defaults" index="2Nv7oj" />
-        <child id="6277608459524101272" name="meta" index="1FXlWU" />
+        <child id="6277608459524101272" name="dependencies" index="1FXlWU" />
       </concept>
       <concept id="4927800370087813624" name="Ansible.structure.Host" flags="ng" index="2Nv76F">
-        <property id="3765204089541758313" name="name" index="2jJbL2" />
+        <property id="3765204089541758313" name="hostName" index="2jJbL2" />
         <child id="3765204089541759698" name="vars" index="2jJafT" />
       </concept>
       <concept id="4927800370087814042" name="Ansible.structure.Variable" flags="ng" index="2Nv7f9">
@@ -43,6 +43,9 @@
       <concept id="5711010130247162773" name="Ansible.structure.Module" flags="ng" index="35iSVx">
         <property id="5711010130247163216" name="name" index="35iSw$" />
       </concept>
+      <concept id="4030067311011110400" name="Ansible.structure.String" flags="ng" index="3alFbt">
+        <property id="4030067311011110765" name="string" index="3alFeK" />
+      </concept>
       <concept id="6277608459524122158" name="Ansible.structure.docker_container" flags="ng" index="1FWEQc">
         <property id="6277608459524581893" name="container_name" index="1FVq6B" />
         <property id="6277608459524124532" name="restart_policy" index="1FWEjm" />
@@ -58,9 +61,6 @@
       <concept id="6277608459524121870" name="Ansible.structure.docker_image" flags="ng" index="1FWEUG">
         <property id="6277608459524494392" name="image_name" index="1FVPYq" />
         <property id="6277608459524133584" name="source" index="1FWH_M" />
-      </concept>
-      <concept id="6277608459524102424" name="Ansible.structure.Dependency" flags="ng" index="1FXlaU">
-        <property id="6277608459524103284" name="role" index="1FXlvm" />
       </concept>
     </language>
   </registry>
@@ -82,7 +82,7 @@
             </node>
             <node concept="2Nv7f9" id="38fIs_I2zsA" role="1FWFJ1">
               <property role="2Nv7JP" value="OTEL_EXPORTER_OTLP_ENDPOINT" />
-              <property role="2Nv7P7" value=" &quot;http://otelcol:4318&quot;" />
+              <property role="2Nv7P7" value="&quot;http://otelcol:4318&quot;" />
             </node>
             <node concept="2Nv7f9" id="38fIs_I2zE3" role="1FWFJ1">
               <property role="2Nv7JP" value="OTEL_RESOURCE_ATTRIBUTES" />
@@ -114,6 +114,9 @@
       <node concept="2Nv4OM" id="5suyU8WUXeo" role="2Zalyf">
         <property role="2NvdFt" value="accountingservice" />
         <property role="2Za8eI" value="true" />
+        <node concept="3alFbt" id="3vHFdRY9HHq" role="1FXlWU">
+          <property role="3alFeK" value="kafka" />
+        </node>
         <node concept="2Nv46K" id="5suyU8WV2ka" role="2Nv6N6">
           <property role="2NvdFt" value="Pull the latest Docker Image" />
           <node concept="1FWEUG" id="5suyU8WV9I_" role="32Uwbj">
@@ -169,9 +172,6 @@
               <property role="2Nv7P7" value="&quot;kafka:9092&quot;" />
             </node>
           </node>
-        </node>
-        <node concept="1FXlaU" id="5suyU8WV2k5" role="1FXlWU">
-          <property role="1FXlvm" value="kafka" />
         </node>
         <node concept="2Nv7f9" id="5suyU8WUXeq" role="2Nv7oj">
           <property role="2Nv7JP" value="service_name" />

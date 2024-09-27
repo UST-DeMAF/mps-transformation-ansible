@@ -285,6 +285,7 @@
       </concept>
       <concept id="2620860285162130372" name="EDMM.structure.Component" flags="ng" index="VmU5f">
         <reference id="2620860285162130373" name="type" index="VmU5e" />
+        <child id="2877443765335994034" name="artifacts" index="3hVhlD" />
       </concept>
       <concept id="2620860285162130297" name="EDMM.structure.DeploymentModel" flags="ng" index="VmU7M">
         <child id="2620860285162130303" name="modelEntities" index="VmU7O" />
@@ -1212,6 +1213,46 @@
     <node concept="VmU5f" id="6Cdh7ACZm99" role="13RCb5">
       <property role="TrG5h" value="DummyComponent" />
       <ref role="VmU5e" node="2UBEacEfioO" resolve="DummyComponentType" />
+      <node concept="VmU4w" id="7OJYu_fPi1A" role="3hVhlD">
+        <property role="2iHhcE" value="file" />
+        <property role="VmU4_" value="path" />
+        <property role="TrG5h" value="&quot;-&quot;" />
+        <node concept="1WS0z7" id="7OJYu_fPihT" role="lGtFl">
+          <node concept="3JmXsc" id="7OJYu_fPihW" role="3Jn$fo">
+            <node concept="3clFbS" id="7OJYu_fPihX" role="2VODD2">
+              <node concept="3clFbF" id="7OJYu_fPii3" role="3cqZAp">
+                <node concept="2OqwBi" id="7OJYu_fPihY" role="3clFbG">
+                  <node concept="3Tsc0h" id="7OJYu_fPii1" role="2OqNvi">
+                    <ref role="3TtcxE" to="rdrv:4hz45fR7RCV" resolve="files" />
+                  </node>
+                  <node concept="30H73N" id="7OJYu_fPii2" role="2Oq$k0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="17Uvod" id="7OJYu_fPiEs" role="lGtFl">
+          <property role="2qtEX9" value="fileURI" />
+          <property role="P4ACc" value="f14a2376-c0aa-410c-b33a-ef6b7f4e7a0c/2620860285162130347/2620860285162130350" />
+          <node concept="3zFVjK" id="7OJYu_fPiEt" role="3zH0cK">
+            <node concept="3clFbS" id="7OJYu_fPiEu" role="2VODD2">
+              <node concept="3clFbF" id="7OJYu_fPiQ1" role="3cqZAp">
+                <node concept="3cpWs3" id="7OJYu_fRO23" role="3clFbG">
+                  <node concept="Xl_RD" id="7OJYu_fROca" role="3uHU7B">
+                    <property role="Xl_RC" value="file:" />
+                  </node>
+                  <node concept="2OqwBi" id="7OJYu_fPj6p" role="3uHU7w">
+                    <node concept="30H73N" id="7OJYu_fPiQ0" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="7OJYu_fPjVt" role="2OqNvi">
+                      <ref role="3TsBF5" to="rdrv:4hz45fR7Q_C" resolve="path" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="VmU4I" id="6Cdh7AD0$DN" role="VmU4z">
         <property role="TrG5h" value="task" />
         <node concept="1WS0z7" id="6Cdh7AD0$QU" role="lGtFl">

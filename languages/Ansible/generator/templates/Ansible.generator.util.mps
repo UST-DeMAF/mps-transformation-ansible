@@ -1337,13 +1337,31 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3SKdUt" id="3vHFdRY1OaK" role="3cqZAp">
-                  <node concept="1PaTwC" id="3vHFdRY1OaL" role="1aUNEU">
-                    <node concept="3oM_SD" id="3vHFdRY1Zse" role="1PaTwD">
-                      <property role="3oM_SC" value="TODO" />
+                <node concept="3clFbF" id="7OJYu_fF3Iv" role="3cqZAp">
+                  <node concept="2OqwBi" id="7OJYu_fFulJ" role="3clFbG">
+                    <node concept="2OqwBi" id="7OJYu_fFe3S" role="2Oq$k0">
+                      <node concept="37vLTw" id="7OJYu_fF3It" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3vHFdRXSsAO" resolve="ansibleRole" />
+                      </node>
+                      <node concept="3Tsc0h" id="7OJYu_fFlBH" role="2OqNvi">
+                        <ref role="3TtcxE" to="rdrv:4hz45fR7RCV" resolve="files" />
+                      </node>
                     </node>
-                    <node concept="3oM_SD" id="3vHFdRY1Zso" role="1PaTwD">
-                      <property role="3oM_SC" value="FILES" />
+                    <node concept="X8dFx" id="7OJYu_fFDGg" role="2OqNvi">
+                      <node concept="1rXfSq" id="7OJYu_fG5eR" role="25WWJ7">
+                        <ref role="37wK5l" node="7OJYu_fFZeI" resolve="convertFiles" />
+                        <node concept="2OqwBi" id="7OJYu_fGpQ_" role="37wK5m">
+                          <node concept="37vLTw" id="7OJYu_fGfb9" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3vHFdRXSsBG" resolve="role" />
+                          </node>
+                          <node concept="liA8E" id="7OJYu_fG_kG" role="2OqNvi">
+                            <ref role="37wK5l" to="mmaq:~Element.getChildren(java.lang.String)" resolve="getChildren" />
+                            <node concept="Xl_RD" id="7OJYu_fGLVk" role="37wK5m">
+                              <property role="Xl_RC" value="files" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1541,6 +1559,125 @@
         <property role="TrG5h" value="listOfVars" />
         <node concept="_YKpA" id="3vHFdRWNVhd" role="1tU5fm">
           <node concept="3uibUv" id="3vHFdRWNVhe" role="_ZDj9">
+            <ref role="3uigEE" to="mmaq:~Element" resolve="Element" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7OJYu_fFPK3" role="jymVt" />
+    <node concept="2YIFZL" id="7OJYu_fFZeI" role="jymVt">
+      <property role="TrG5h" value="convertFiles" />
+      <node concept="3clFbS" id="7OJYu_fFZeL" role="3clF47">
+        <node concept="3cpWs8" id="7OJYu_fHdWC" role="3cqZAp">
+          <node concept="3cpWsn" id="7OJYu_fHdWF" role="3cpWs9">
+            <property role="TrG5h" value="roleFiles" />
+            <node concept="2I9FWS" id="7OJYu_fHdWB" role="1tU5fm">
+              <ref role="2I9WkF" to="rdrv:4hz45fR7QaJ" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="7OJYu_fILMl" role="33vP2m">
+              <node concept="2T8Vx0" id="7OJYu_fITIc" role="2ShVmc">
+                <node concept="2I9FWS" id="7OJYu_fITIe" role="2T96Bj">
+                  <ref role="2I9WkF" to="rdrv:4hz45fR7QaJ" resolve="File" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="7OJYu_fK7Rx" role="3cqZAp">
+          <node concept="3clFbS" id="7OJYu_fK7Rz" role="2LFqv$">
+            <node concept="1DcWWT" id="7OJYu_fKT0T" role="3cqZAp">
+              <node concept="3clFbS" id="7OJYu_fKT0V" role="2LFqv$">
+                <node concept="3cpWs8" id="7OJYu_fM6O8" role="3cqZAp">
+                  <node concept="3cpWsn" id="7OJYu_fM6Ob" role="3cpWs9">
+                    <property role="TrG5h" value="roleFile" />
+                    <node concept="3Tqbb2" id="7OJYu_fM6O6" role="1tU5fm">
+                      <ref role="ehGHo" to="rdrv:4hz45fR7QaJ" resolve="File" />
+                    </node>
+                    <node concept="2ShNRf" id="7OJYu_fMKFD" role="33vP2m">
+                      <node concept="3zrR0B" id="7OJYu_fMKCd" role="2ShVmc">
+                        <node concept="3Tqbb2" id="7OJYu_fMKCe" role="3zrR0E">
+                          <ref role="ehGHo" to="rdrv:4hz45fR7QaJ" resolve="File" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7OJYu_fMRKN" role="3cqZAp">
+                  <node concept="37vLTI" id="7OJYu_fNuoe" role="3clFbG">
+                    <node concept="2OqwBi" id="7OJYu_fNMF7" role="37vLTx">
+                      <node concept="37vLTw" id="7OJYu_fNE28" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7OJYu_fKT0W" resolve="file" />
+                      </node>
+                      <node concept="liA8E" id="7OJYu_fNXlY" role="2OqNvi">
+                        <ref role="37wK5l" to="mmaq:~Element.getChildText(java.lang.String)" resolve="getChildText" />
+                        <node concept="Xl_RD" id="7OJYu_fO6WK" role="37wK5m">
+                          <property role="Xl_RC" value="path" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7OJYu_fNaGi" role="37vLTJ">
+                      <node concept="37vLTw" id="7OJYu_fN1Za" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7OJYu_fM6Ob" resolve="roleFile" />
+                      </node>
+                      <node concept="3TrcHB" id="7OJYu_fNjHv" role="2OqNvi">
+                        <ref role="3TsBF5" to="rdrv:4hz45fR7Q_C" resolve="path" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7OJYu_fO_$v" role="3cqZAp">
+                  <node concept="2OqwBi" id="7OJYu_fOKsL" role="3clFbG">
+                    <node concept="37vLTw" id="7OJYu_fO_$t" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7OJYu_fHdWF" resolve="roleFiles" />
+                    </node>
+                    <node concept="TSZUe" id="7OJYu_fOXu1" role="2OqNvi">
+                      <node concept="37vLTw" id="7OJYu_fP61W" role="25WWJ7">
+                        <ref role="3cqZAo" node="7OJYu_fM6Ob" resolve="roleFile" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWsn" id="7OJYu_fKT0W" role="1Duv9x">
+                <property role="TrG5h" value="file" />
+                <node concept="3uibUv" id="7OJYu_fL0Zp" role="1tU5fm">
+                  <ref role="3uigEE" to="mmaq:~Element" resolve="Element" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7OJYu_fLBdc" role="1DdaDG">
+                <node concept="37vLTw" id="7OJYu_fLvHM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7OJYu_fK7R$" resolve="files" />
+                </node>
+                <node concept="liA8E" id="7OJYu_fLNHp" role="2OqNvi">
+                  <ref role="37wK5l" to="mmaq:~Element.getChildren()" resolve="getChildren" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="7OJYu_fK7R$" role="1Duv9x">
+            <property role="TrG5h" value="files" />
+            <node concept="3uibUv" id="7OJYu_fKf0$" role="1tU5fm">
+              <ref role="3uigEE" to="mmaq:~Element" resolve="Element" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="7OJYu_fKxp0" role="1DdaDG">
+            <ref role="3cqZAo" node="7OJYu_fG22$" resolve="listOfFiles" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7OJYu_fJvwy" role="3cqZAp">
+          <node concept="37vLTw" id="7OJYu_fJvww" role="3clFbG">
+            <ref role="3cqZAo" node="7OJYu_fHdWF" resolve="roleFiles" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7OJYu_fFTZk" role="1B3o_S" />
+      <node concept="2I9FWS" id="7OJYu_fFXsE" role="3clF45">
+        <ref role="2I9WkF" to="rdrv:4hz45fR7QaJ" resolve="File" />
+      </node>
+      <node concept="37vLTG" id="7OJYu_fG22$" role="3clF46">
+        <property role="TrG5h" value="listOfFiles" />
+        <node concept="_YKpA" id="7OJYu_fG22y" role="1tU5fm">
+          <node concept="3uibUv" id="7OJYu_fG353" role="_ZDj9">
             <ref role="3uigEE" to="mmaq:~Element" resolve="Element" />
           </node>
         </node>

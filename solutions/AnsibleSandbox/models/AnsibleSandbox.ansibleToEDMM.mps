@@ -11,6 +11,7 @@
         <child id="7641839432033060522" name="action" index="32Uwbj" />
       </concept>
       <concept id="4927800370087812449" name="Ansible.structure.Role" flags="ng" index="2Nv4OM">
+        <child id="4927800370087819835" name="files" index="2Nv6DC" />
         <child id="4927800370087820437" name="tasks" index="2Nv6N6" />
         <child id="4927800370087814720" name="defaults" index="2Nv7oj" />
         <child id="6277608459524101272" name="dependencies" index="1FXlWU" />
@@ -19,12 +20,16 @@
         <property id="3765204089541758313" name="hostName" index="2jJbL2" />
         <child id="3765204089541759698" name="vars" index="2jJafT" />
       </concept>
+      <concept id="4927800370087813807" name="Ansible.structure.File" flags="ng" index="2Nv7bW">
+        <property id="4927800370087815528" name="path" index="2Nv7$V" />
+      </concept>
       <concept id="4927800370087814042" name="Ansible.structure.Variable" flags="ng" index="2Nv7f9">
         <property id="4927800370087816102" name="name" index="2Nv7JP" />
         <property id="4927800370087816468" name="value" index="2Nv7P7" />
       </concept>
       <concept id="3407068778039657734" name="Ansible.structure.Play" flags="ng" index="2Za986">
         <child id="4927800370087805875" name="pre_tasks" index="2Nv5fw" />
+        <child id="4927800370087807131" name="post_tasks" index="2Nv5z8" />
         <child id="3407068778039680177" name="hosts" index="2ZakIL" />
         <child id="3407068778039676815" name="roles" index="2Zalyf" />
       </concept>
@@ -45,6 +50,14 @@
       </concept>
       <concept id="4030067311011110400" name="Ansible.structure.String" flags="ng" index="3alFbt">
         <property id="4030067311011110765" name="string" index="3alFeK" />
+      </concept>
+      <concept id="4030067311006710899" name="Ansible.structure.launchd" flags="ng" index="3aA_2I">
+        <property id="4030067311010245140" name="enabled" index="3ag4r9" />
+        <property id="4030067311010244146" name="launchd_name" index="3ag4FJ" />
+      </concept>
+      <concept id="4030067311006709726" name="Ansible.structure.docker_network" flags="ng" index="3aA_G3">
+        <property id="4030067311009227178" name="network_name" index="3asWPR" />
+        <property id="4030067311009227752" name="driver" index="3asWWP" />
       </concept>
       <concept id="6277608459524122158" name="Ansible.structure.docker_container" flags="ng" index="1FWEQc">
         <property id="6277608459524581893" name="container_name" index="1FVq6B" />
@@ -68,8 +81,26 @@
     <node concept="2Za986" id="5suyU8WUtc9" role="2ZaeIm">
       <property role="2NvdFt" value="Deploy OpenTelemetry Demo" />
       <property role="2Za8eI" value="true" />
+      <node concept="2Nv46K" id="3PFyCnzCr1l" role="2Nv5z8">
+        <property role="2NvdFt" value="launchd" />
+        <node concept="3aA_2I" id="3PFyCnzCr1r" role="32Uwbj">
+          <property role="3ag4FJ" value="[7, 8, 9]" />
+          <property role="3ag4r9" value="true" />
+        </node>
+      </node>
+      <node concept="2Nv46K" id="3PFyCnzwdRV" role="2Nv5fw">
+        <property role="2NvdFt" value="Ensure network created" />
+        <node concept="3aA_G3" id="3PFyCnzwdS5" role="32Uwbj">
+          <property role="35iSw$" value="example_networkName" />
+          <property role="3asWPR" value="example_network" />
+          <property role="3asWWP" value="bridge" />
+        </node>
+      </node>
       <node concept="2Nv4OM" id="38fIs_HZ$m5" role="2Zalyf">
         <property role="2NvdFt" value="kafka" />
+        <node concept="2Nv7bW" id="3PFyCnzEbCr" role="2Nv6DC">
+          <property role="2Nv7$V" value="/path/to/file.yaml" />
+        </node>
         <node concept="2Nv46K" id="38fIs_I2yII" role="2Nv6N6">
           <property role="2NvdFt" value="Deploy Service" />
           <node concept="1FWEQc" id="38fIs_I2yTb" role="32Uwbj">

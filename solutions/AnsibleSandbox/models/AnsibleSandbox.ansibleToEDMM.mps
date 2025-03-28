@@ -11,6 +11,7 @@
         <child id="7641839432033060522" name="action" index="32Uwbj" />
       </concept>
       <concept id="4927800370087812449" name="Ansible.structure.Role" flags="ng" index="2Nv4OM">
+        <child id="4927800370087817489" name="vars" index="2Nv652" />
         <child id="4927800370087819835" name="files" index="2Nv6DC" />
         <child id="4927800370087820437" name="tasks" index="2Nv6N6" />
         <child id="4927800370087814720" name="defaults" index="2Nv7oj" />
@@ -47,6 +48,7 @@
       </concept>
       <concept id="5711010130247162773" name="Ansible.structure.Module" flags="ng" index="35iSVx">
         <property id="5711010130247163216" name="name" index="35iSw$" />
+        <child id="5711010130247163686" name="vars" index="35iSDi" />
       </concept>
       <concept id="4030067311011110400" name="Ansible.structure.String" flags="ng" index="3alFbt">
         <property id="4030067311011110765" name="string" index="3alFeK" />
@@ -94,10 +96,18 @@
           <property role="35iSw$" value="example_networkName" />
           <property role="3asWPR" value="example_network" />
           <property role="3asWWP" value="bridge" />
+          <node concept="2Nv7f9" id="3DJ73S5c2$4" role="35iSDi">
+            <property role="2Nv7JP" value="test" />
+            <property role="2Nv7P7" value="test" />
+          </node>
         </node>
       </node>
       <node concept="2Nv4OM" id="38fIs_HZ$m5" role="2Zalyf">
         <property role="2NvdFt" value="kafka" />
+        <node concept="2Nv7f9" id="3DJ73S5c2_1" role="2Nv652">
+          <property role="2Nv7JP" value="test" />
+          <property role="2Nv7P7" value="test" />
+        </node>
         <node concept="2Nv7bW" id="3PFyCnzEbCr" role="2Nv6DC">
           <property role="2Nv7$V" value="/path/to/file.yaml" />
         </node>

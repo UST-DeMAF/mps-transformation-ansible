@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:88a95ea4-bd14-40d2-bd13-e8cb5f632747(AnsibleSandbox.ansibleToEDMM)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <use id="3047580e-514d-469e-a5ea-182979dd2878" name="Ansible" version="0" />
   </languages>
